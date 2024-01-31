@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/txtLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:textSize="33dp"
+
+        />
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLogin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Username"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edt1"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtUser"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="-10dp"
+        android:ems="10"
+        android:textSize="20dp"
+        android:hint="Enter Username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPass"
+        android:text="Password"
+        android:textSize="20dp"
+        android:layout_below="@id/txtUser"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edt2"
+        android:hint="Enter Password"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt1"
+        android:layout_alignRight="@id/txtPass"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        />
+
+</RelativeLayout>
